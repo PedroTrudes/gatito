@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text , View, SafeAreaView, StatusBar, FlatList} from 'react-native';
+import { FlatList} from 'react-native';
 import Item from './item';
-import estilosGlobal from '../../estilos'
+import TelaPadrao from '../../componente/TelaPadrao';
 
 const servicos = [
     {
@@ -25,15 +25,12 @@ const servicos = [
 ]
 
 export default function Servicos () {
-    return  <SafeAreaView style={estilosGlobal.preencher}>
-            <StatusBar />
+    return  <TelaPadrao>
             <FlatList 
                 data={servicos}
                 renderItem={({item}) => <Item {...item} />} 
                 keyExtractor={({id}) => String(id)}   
             />
-            
-            
-        </SafeAreaView>
+        </TelaPadrao>
     
 }
