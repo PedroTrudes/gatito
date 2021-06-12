@@ -25,12 +25,12 @@ const servicos = [
 ]
 
 export default function Servicos () {
-    return  <TelaPadrao>
+    return  <>
             <FlatList 
                 data={servicos}
                 renderItem={({item}) => <Item {...item} />} 
                 keyExtractor={({id}) => String(id)}   
             />
-        </TelaPadrao>
+        </>
     
 }
