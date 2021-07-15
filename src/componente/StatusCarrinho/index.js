@@ -15,7 +15,7 @@ export default function StatusCarrinho({total}) {
                 }
             </Text>
         </View>
-        <View style={estilos.botão}>
+        <View style={estilos.botao}>
                 <Botao valor='Concluir Pedido' invertido />
         </View>
     </View>

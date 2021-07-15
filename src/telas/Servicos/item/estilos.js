@@ -5,12 +5,14 @@ export default StyleSheet.create({
 
     informacao: {
         padding: 24,
+        
     },
 
     nome: {
-        color: cores.laranja,
+        color: cores.azul,
         fontWeight: 'bold',
         fontSize: 20,
+        textAlign: 'center',
     },
 
     calculo: {
@@ -20,11 +22,18 @@ export default StyleSheet.create({
     },
 
     preco: {
-        color: cores.roxo,
+        color: cores.escuro,
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginLeft: 8,
+    },
+    precoTotal: {
+        color: cores.escuro,
         fontSize: 16,
         fontWeight: 'bold',
-        textAlign: 'right',
-        marginLeft: 10,
+        textAlign: 'center',
+        marginLeft: 8,
     },
 
     divisor: {
@@ -40,15 +49,28 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         flexWrap: 'wrap',
+        paddingTop: 30,
     },
 
     descricao: {
         color: cores.escuro,
         fontWeight: 'bold',
         fontSize: 16,
+        paddingBottom: 15,
+        textAlign: 'center',
+        paddingTop: 15,
     },
+
+    descricaoTotal: {
+        color: cores.escuro,
+        fontWeight: 'bold',
+        fontSize: 16,
+        paddingBottom: 15,
+        textAlign: 'center',
+    }, 
+
     valor: {
-        color: cores.roxo,
+        color: cores.azul,
         fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'center',
@@ -56,7 +78,7 @@ export default StyleSheet.create({
         padding: 5,
     },
     quantidade: {
-        color: cores.roxo,
+        color: cores.azul,
         fontSize: 18,
         fontWeight: 'bold',
         flexDirection: 'column',

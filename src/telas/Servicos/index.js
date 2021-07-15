@@ -6,31 +6,45 @@ import TelaPadrao from '../../componente/TelaPadrao';
 const servicos = [
     {
         id: 1,
-        nome: "Carlos",
-        preco: 79.9,
-        descricao: "Não de Banho no seu gato, mas se precisar nos damos",
+        nome: "Óculos de Sol",
+        preco: 50.9,
+        descricao: "Óculos perfeito para praia",
     },
     {
         id: 2,
-        nome: "V4",
-        preco: 88.9,
-        descricao: "Uma dose da vacina V4, Seu gato vai precisar de duas.",
+        nome: "Óculos de leitura-social",
+        preco: 125.9,
+        descricao: "Óculos leve e suave, perfeito para uma festa socia ou para uma boa leitura",
     },
     {
         id: 3,
-        nome: "Vacina para raiva.",
+        nome: "Óculos de Sol",
         preco: 99.9,
-        descricao: "apenas uma dose por ano.",
+        descricao: "perfeito para um passeio na rua",
+    },
+    {
+        id: 4,
+        nome: "Óculos Kids",
+        preco: 20.9,
+        descricao: "Perfeito para o seu filho"
+    },
+    {
+        id: 5,
+        nome: "Óculos LGBT",
+        preco: 34.5,
+        descricao: "Óculos especial para o dia LGBT"
+
     }
+
 ]
 
 export default function Servicos () {
-    return  <>
-            <FlatList 
+    return  <FlatList 
                 data={servicos}
                 renderItem={({item}) => <Item {...item} />} 
                 keyExtractor={({id}) => String(id)}   
             />
-        </>
+
+       
     
 }

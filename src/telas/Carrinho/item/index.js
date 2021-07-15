@@ -44,7 +44,9 @@ export default function Item({nome, preco, descricao, quantidade: quantidadeInic
                 </Text>
             </View>
         </View>
+        <View style={estilos.btnRemove}>
         <Botao valor="Remover do carrinho" acao={() => {}} />
+        </View>
     </View> 
     
     <View style={estilos.divisor} />

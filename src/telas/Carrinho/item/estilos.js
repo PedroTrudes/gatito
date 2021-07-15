@@ -20,7 +20,7 @@ export default StyleSheet.create({
     },
 
     preco: {
-        color: cores.roxo,
+        color: cores.escuro,
         fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'right',
@@ -48,7 +48,7 @@ export default StyleSheet.create({
         fontSize: 16,
     },
     valor: {
-        color: cores.roxo,
+        color: cores.escuro,
         fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'center',
@@ -56,10 +56,13 @@ export default StyleSheet.create({
         padding: 5,
     },
     quantidade: {
-        color: cores.roxo,
+        color: cores.escuro,
         fontSize: 18,
         fontWeight: 'bold',
         flexDirection: 'column',
+    },
+    btnRemove:{
+        paddingLeft: 25,
     }
 
 })

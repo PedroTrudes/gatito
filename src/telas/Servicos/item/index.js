@@ -26,7 +26,7 @@ export default function Item({nome, preco, descricao}) {
     }
 
     return <>
-    <TouchableOpacity style={estilos.informacao} onPress={inverteExpandir}>
+    <View style={estilos.informacao} onPress={inverteExpandir}>
         <Text style={estilos.nome}>{ nome }</Text>
         <Text style={estilos.descricao}>{ descricao }</Text>
         <Text style={estilos.preco}>{ 
@@ -34,8 +34,8 @@ export default function Item({nome, preco, descricao}) {
            style: 'currency', currency: 'BRL'
         }).format(preco)
         }</Text>
-    </TouchableOpacity>
-    {expandir && 
+    
+    {/*   {expandir && */}
     <View style={estilos.carrinho}>
         <View>
             <View style={estilos.valor}>
@@ -43,17 +43,20 @@ export default function Item({nome, preco, descricao}) {
                 <CampoInteiro estilos={estilos.quantidade}  valor={quantidade} acao={atualizaQuantidadeTotal} />
             </View>
             <View style={estilos.valor}>
-                <Text style={estilos.descricao}>Preço:</Text>
-                <Text style={estilos.preco}>{
+                <Text style={estilos.descricaoTotal}>Preço:</Text>
+                <Text style={estilos.precoTotal}>{
                 Intl.NumberFormat('pt-BR', {
                 style: 'currency', currency: 'BRL'
                 }).format(total)}
-                </Text>
+        </Text>
             </View>
         </View>
-        <Botao valor="Adicionar ao Carrinho" acao={() => {}} />
+        <Botao valor="Carrinho" acao={() => {}} />
+        
     </View> 
-    }
+    </View>
+   {/*  } */}
     <View style={estilos.divisor} />
+    
     </>
 }
